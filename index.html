@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
+
 <body>
   <header>
     <div class="header-direita">
@@ -26,30 +29,41 @@
       <img src="./images/image-avatar.png" alt="" id="profile">
     </div>
   </header>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="container">
+      <div class="imagem-principal">
+        <img src="./images/image-product-1.jpg" alt="Imagem do produto">
+        <div class="thumbnails">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" id="thumbnails">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail 2">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail 3">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail 4">
+        </div>
+      </div>
+      <div class="detalhes-produto">
+        <h3 class="marca">Sneaker Company</h3>
+        <h1 class="titulo-produto">Fall Limited Edition Sneakers</h1>
+        <p class="descricao-produto">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="preco">
+          <span class="preco-atual">$125.00</span>
+          <span class="desconto">50%</span>
+          <span class="preco-antigo">$250.00</span>
+        </div>
+        <div class="adicionar-carrinho">
+          <div class="quantidade">
+            <button class="diminuir"><img src="./images/icon-minus.svg" alt="Diminuir quantidade"></button>
+            <span class="numero-itens">0</span>
+            <button class="aumentar"><img src="./images/icon-plus.svg" alt="Aumentar quantidade"></button>
+          </div>
+          <button class="botao-carrinho">
+            <img src="./images/icon-cart.svg" alt="Ícone do carrinho de compras">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
